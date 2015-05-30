@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>ScrollToTop</title>
+    <style>
+        .scroll {
+            background-color: #f0f0f0;
+            padding: 20px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            border-radius: 25px;
+        }
+        .blk {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll">Up</div>
+    <div class="blk"></div>
+    <div class="blk"></div>
+    <div class="blk"></div>
+
+    <script src="index.js"></script>
+    <script>
+        var _sc = document.getElementsByClassName('scroll')[0]
+         _sc.addEventListener('click', function() {
+            ScrollToTop(0, _sc);
+        });
+    </script>
+</body>
+
+</html>
